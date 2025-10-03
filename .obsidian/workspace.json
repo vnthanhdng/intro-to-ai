@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "97e85e1fedcb5246",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f0adc4c0b826c45",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54e607088fcc965e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Search and Problem Solving/Uninformed Search.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Uninformed Search"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b5967b52eb392838",
+    "type": "split",
+    "children": [
+      {
+        "id": "b9c1e95c147ce06b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "885f75fc11857653",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "67bb3026804588be",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c6acad081272e29a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "2b06ac6a0ce00fb4",
+    "type": "split",
+    "children": [
+      {
+        "id": "1640870f32ed8f46",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ea29d538d5573674",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Search and Problem Solving/Uninformed Search.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Uninformed Search"
+            }
+          },
+          {
+            "id": "909ba2d3e2e60f23",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Search and Problem Solving/Uninformed Search.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Uninformed Search"
+            }
+          },
+          {
+            "id": "6468bac5162d4b32",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f0392eafef960743",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Search and Problem Solving/Uninformed Search.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Uninformed Search"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "54e607088fcc965e",
+  "lastOpenFiles": [
+    "Search and Problem Solving/Introduction to Environments and Agents.md",
+    "Search and Problem Solving/Uninformed Search.md",
+    "Untitled.md",
+    "Welcome.md",
+    "Search and Problem Solving"
+  ]
+}

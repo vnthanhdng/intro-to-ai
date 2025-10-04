@@ -14,7 +14,7 @@ A heuristic is **admissible** if it **never overestimates** the true least cost 
 0 \le h(n) \le h^*(n) \text{ for all } n
 \]
 
-➡️ Guarantees **optimality** of A\* in **tree search**.
+Guarantees **optimality** of A\* in **tree search**.
 
 ### Consistency (Monotonicity)
 A heuristic is **consistent** if, for every edge `n → n'` with cost `c(n, n')`:
@@ -23,7 +23,7 @@ A heuristic is **consistent** if, for every edge `n → n'` with cost `c(n, n')`
 h(n) \le c(n, n') + h(n'), \quad h(\text{goal}) = 0
 \]
 
-➡️ Guarantees **optimality** of A\* in **graph search** and ensures that `f(n)` never decreases along a path.
+Guarantees **optimality** of A\* in **graph search** and ensures that `f(n)` never decreases along a path.
 
 ### Designing Heuristics (Relaxed Problems)
 Powerful admissible heuristics often come from **relaxing constraints** so the problem becomes easier.  

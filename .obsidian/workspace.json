@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Search and Problem Solving/Uninformed Search.md",
+                "file": "Search and Problem Solving/Informed Search.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Uninformed Search"
+              "title": "Informed Search"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Search and Problem Solving/Uninformed Search.md",
+                "file": "Search and Problem Solving/Informed Search.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Uninformed Search"
+              "title": "Backlinks for Informed Search"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Search and Problem Solving/Uninformed Search.md",
+                "file": "Search and Problem Solving/Informed Search.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Uninformed Search"
+              "title": "Outgoing links from Informed Search"
             }
           },
           {
@@ -142,21 +142,31 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Search and Problem Solving/Uninformed Search.md",
+                "file": "Search and Problem Solving/Informed Search.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Uninformed Search"
+              "title": "Outline of Informed Search"
+            }
+          },
+          {
+            "id": "4e978c4cf1f06383",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,15 +176,17 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "54e607088fcc965e",
+  "active": "4e978c4cf1f06383",
   "lastOpenFiles": [
-    "Search and Problem Solving/Introduction to Environments and Agents.md",
     "Search and Problem Solving/Uninformed Search.md",
-    "Untitled.md",
+    "Search and Problem Solving/Informed Search.md",
     "Welcome.md",
+    "Search and Problem Solving/Introduction to Environments and Agents.md",
+    "Untitled.md",
     "Search and Problem Solving"
   ]
 }

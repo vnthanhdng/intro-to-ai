@@ -25,6 +25,7 @@ $$
 h(n) \le c(n, n') + h(n'), \quad h(\text{goal}) = 0
 
 $$
+
 Guarantees **optimality** of A\* in **graph search** and ensures that `f(n)` never decreases along a path.
 
 ### Designing Heuristics (Relaxed Problems)

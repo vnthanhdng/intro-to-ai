@@ -28,6 +28,13 @@ $$
 
 Guarantees **optimality** of A\* in **graph search** and ensures that `f(n)` never decreases along a path.
 
+Questions
+1. If we used an inadmissible heuristic in A* graph search, would the search be complete? Would it be optimal?
+	If a heuristic function is bounded, then A* graph search would visit all the nodes eventually, and would find a path to the goal state if there exists one. An inadmissible heuristic does not guarantee optimality as it can make the good optimal goal look as though it is very far off, and take you to a suboptimal goal.
+2. If we used an admissible heuristic in A* graph search, is it guaranteed to return an optimal solution? What if the heuristic was consistent?
+	Admissible heuristics do not necessarily guarantee optimality; they are only guaranteed to return an optimal solution for graph search if they are consistent as well.
+3. A general advantage that an inadmissible heuristic might have over an admissible one?
+	The time to solve an A* search problem is a function of two factors: the number of nodes expanded, and the time spent per node. An inadmissible heuristic may be faster to computer, leading to a solution that is obtained faster due to less time spent per node. It can also be a closer estimate to the actual cost function (even through at times it will overestimate), thus expanding less nodes. We lose the guarantee of optimality by using an inadmissible heuristic. But sometimes we may be okay with finding a suboptimal solution to a search problem.
 ### Designing Heuristics (Relaxed Problems)
 Powerful admissible heuristics often come from **relaxing constraints** so the problem becomes easier.  
 The relaxed problem’s solution cost is a valid lower bound.

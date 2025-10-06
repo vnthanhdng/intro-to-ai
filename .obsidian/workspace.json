@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probabilistic Reasoning/Probability and Inference.md",
+                "file": "Search and Problem Solving/Informed Search.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Probability and Inference"
+              "title": "Informed Search"
             }
           }
         ]
@@ -182,10 +182,10 @@
   },
   "active": "54e607088fcc965e",
   "lastOpenFiles": [
-    "Reinforcement Learning/Advanced Reinforcement Learning.md",
     "Reinforcement Learning/Reinforcement Learning.md",
-    "Markov Decision Processes/Markov Decision Processes.md",
+    "Reinforcement Learning/Advanced Reinforcement Learning.md",
     "Probabilistic Reasoning/Probability and Inference.md",
+    "Markov Decision Processes/Markov Decision Processes.md",
     "Games and Adversarial Search/Expectimax & Probabilities.md",
     "Probabilistic Reasoning",
     "Reinforcement Learning",

@@ -1,5 +1,6 @@
 ## 1. Environment Types
 An environment defines the world in which an AI agent operates. Classifying environments helps us understand what algorithms and agent designs are appropriate.
+
 **Key Dimensions**
 - Fully vs. Partially Observable
 	- Fully observable: Agent has access to the complete state of the environment

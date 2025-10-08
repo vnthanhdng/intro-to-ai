@@ -174,11 +174,11 @@ def astar(problem, h):
 - **A* Graph Search Optimality (consistent h):**  
     `f` never decreases along paths; nodes reaching a state with the lowest `g` are expanded before suboptimal alternatives; the first time goal is popped, it’s optimal.
 ## 6. Greedy vs UCS vs A*
-|Algorithm|Priority Key|Optimal?|Notes|
-|---|---|---|---|
-|Greedy Best-First|`h(n)`|❌ No|Fast but can “bee-line” to the wrong goal|
-|Uniform-Cost Search|`g(n)`|✅ Yes|Heuristic-free; explores by path cost|
-|A*|`g(n) + h(n)`|✅ Yes (with admissible/consistent `h`)|Balances known cost and estimated distance|
+| Algorithm           | Priority Key  | Optimal?                             | Notes                                      |
+| ------------------- | ------------- | ------------------------------------ | ------------------------------------------ |
+| Greedy Best-First   | `h(n)`        | No                                   | Fast but can “bee-line” to the wrong goal  |
+| Uniform-Cost Search | `g(n)`        | Yes                                  | Heuristic-free; explores by path cost      |
+| A*                  | `g(n) + h(n)` | Yes (with admissible/consistent `h`) | Balances known cost and estimated distance |
 ## 7. Heuristic Quality & Work
 - **Stronger heuristics** (larger but still admissible) ⇒ fewer node expansions.
 - There’s a **trade-off**: better `h` may be more expensive to compute per node.
@@ -198,6 +198,6 @@ def astar(problem, h):
 | **Consistent** | Obeys triangle inequality across edges |
 ### Takeaways
 - **Greedy** is fast but not guaranteed optimal.
-- **A*** is optimal when using admissible/consistent heuristics.    
+- A* is optimal when using admissible/consistent heuristics.    
 - Stronger admissible heuristics reduce node expansions exponentially.
 - Relaxed problems are the foundation for heuristic design.

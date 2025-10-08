@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Search and Problem Solving/Informed Search.md",
+                "file": "Search and Problem Solving/Introduction to Environments and Agents.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Informed Search"
+              "title": "Introduction to Environments and Agents"
             }
           }
         ]
@@ -182,18 +182,18 @@
   },
   "active": "54e607088fcc965e",
   "lastOpenFiles": [
-    "Reinforcement Learning/Reinforcement Learning.md",
     "Reinforcement Learning/Advanced Reinforcement Learning.md",
-    "Probabilistic Reasoning/Probability and Inference.md",
+    "Reinforcement Learning/Reinforcement Learning.md",
     "Markov Decision Processes/Markov Decision Processes.md",
+    "Search and Problem Solving/Constraint Satisfaction Problems.md",
+    "Search and Problem Solving/Informed Search.md",
+    "Probabilistic Reasoning/Probability and Inference.md",
     "Games and Adversarial Search/Expectimax & Probabilities.md",
     "Probabilistic Reasoning",
     "Reinforcement Learning",
     "Markov Decision Processes",
     "Games and Adversarial Search",
     "Games and Adversarial Search/Adversarial Search.md",
-    "Search and Problem Solving/Constraint Satisfaction Problems.md",
-    "Search and Problem Solving/Informed Search.md",
     "Search and Problem Solving/Uninformed Search.md",
     "Welcome.md",
     "Search and Problem Solving/Introduction to Environments and Agents.md",

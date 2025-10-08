@@ -55,13 +55,20 @@ BACKTRACK(assignment):
 ```
 ### Key points
 - Basic depth-first framework.
-- Calls to helper functions let us add **heuristics** (e.g., MRV, LCV) and **filtering** (e.g., forward checking).
+- Calls to helper functions let us add **heuristics** for dynamic ordering (e.g., MRV, LCV) and **filtering** (e.g., forward checking).
+- 4 improvements:
+	- General purpose ideas can give huge gains in speed but it's all still NP-hard
+	- Ordering
+		- Which variable should be assigned next? MRV
+		- In what order should its values be tried? LCV
+	- Filtering: Can we detect inevitable failure early?
+	- Structure: Can we exploit the problem structure?
 
 ---
 
 ## 4. Variable and Value Heuristics
 
-### Minimum Remaining Values (MRV)
+### Minimum Remaining Values (MRV) or Most Constrained Variables (MCV)
 - Choose the variable with the **fewest legal values** left.
 - Encourages “fail-fast”: try the most constrained variable first.
 
@@ -78,16 +85,20 @@ BACKTRACK(assignment):
 **Filtering** methods prune variable domains by enforcing consistency between variables before deeper search.
 
 ### Arc Consistency
-An arc \( X \to Y \) is **consistent** if:
+An arc $$ X \to Y $$ is **consistent** if:
 > for every value `x` in `X`, there exists some value `y` in `Y` satisfying the constraint between them.
 
 If no such `y` exists, remove `x` from `X`’s domain.
+
+Strong K-consistency: also k-1, k-2,..., 1 consistent. 
+Claim: strong n-consistency means we can solve without backtracking.
 
 ---
 
 ### AC-3 Algorithm (Arc Consistency 3)
 
 **Goal:** Enforce arc consistency across all constraints.
+Mnemonic: Always delete from the tail.
 
 ### Pseudocode
 ```scss
@@ -117,7 +128,7 @@ function REVISE(csp, Xi, Xj):
 	return revised
 ```
 
-**Runtime:** $$O(n^2 d^3)$$, can be reduced to $$O(n^2 d^2) $$.
+**Runtime:** $$O(n^2 d^3)$$ can be reduced to $$O(n^2 d^2) $$
 
 ## 6. Python Example — AC-3
 
@@ -144,7 +155,7 @@ def revise(csp, Xi, Xj):
             revised = True
     return revised```
 
-## 7. Forward Checking
+## 7. Forward Checking (one-step lookahead)
 
 After assigning a variable, eliminate inconsistent values from neighboring domains.
 
@@ -163,6 +174,7 @@ FORWARD-CHECKING(csp, var, value):
 ```
 
 Combines well with **MRV** — quickly detects dead-ends before deep recursion.
+
 ## 8. Example: Map Coloring
 
 ### Variables
@@ -181,7 +193,16 @@ Backtracking + MRV + AC-3 finds a solution like:
 
 - **Independent Subproblems:** Separate constraint graphs can be solved independently.
 - **Tree-Structured CSPs:** Solvable in $$ O(nd^2) (linear time).$$
+	Algorithm for tree-structured CSPs:
+	- Order: choose a root variable, order variables so that parents precede children.
+	- Remove backward: For i = n : 2, apply RemoveInconsistent(Parent(X_i), X_j) (arc consistency from sub tree and building up to the root)
+	- Assign forward: For i = 1 : n, assign X consistently with Parent(X_i)
 - **Cutset Conditioning:** Assign a small subset of variables to break cycles, leaving a tree.
+	Nearly Tree-Structured CSPs
+	- Conditioning: instantiate a variable, prune its neighbors' domains
+	- Cutset conditioning: instantiate (in all ways) a set of variables such that the remaining constraint graph is a tree
+	- Cutset size c gives runtime $$ O((d^c) (n -c) d^2) $$, which is very fast for small c.
+
 
 ---
 
